@@ -1,0 +1,176 @@
+$main-background: hsl(233, 47%, 7%);
+$card-background:hsl(244, 38%, 16%);
+$accent:#8C4BB3;
+$main-heading: hsl(0, 0%, 100%);
+$main-paragraph: hsla(0, 0%, 100%, 0.75);
+$stat-heading: hsla(0, 0%, 100%, 0.6);
+
+
+*
+{
+    box-sizing: border-box;
+  
+    margin: 0;
+
+}
+
+body
+{
+    background-color:$main-background;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.main-container
+{
+    width: 65rem;
+    border-radius: 10px;
+    padding-left:6rem;
+    background-color: $card-background;
+}
+.card-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+}
+.card-container-1
+{
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    gap:1rem;
+
+   
+}
+.Text
+{
+    
+
+    color: rgb(255, 255, 255);
+}
+.card-container-3
+{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 0;
+    font-family: 'Lexand Deca',sans-serif;
+    margin-top: 5rem;
+
+}
+p
+{
+    margin-bottom: 1px;
+}
+#Main
+{
+    font-family: 'Lexand Deca',sans-serif;
+
+}
+
+
+#Paragraph
+{
+    font-family: 'Lexand Deca',sans-serif;
+    color:$main-paragraph;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+}
+#span-1
+{
+    color: $accent;
+}
+img
+{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    opacity: .6;
+
+}
+.card-container-2
+{
+    background-color: $accent;
+    padding-bottom: 0%;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: fit;
+}
+.Span-3
+{
+    font-family: 'Lexand Deca',sans-serif;
+}
+.Names
+{
+    font-size: 15px;
+    font-family: 'Lexand Deca' sans-serif;
+}
+.span-2
+{
+    color: $main-paragraph;
+    font-size: 10px;
+}
+.span-3
+{
+  font-size:30px;
+  color: white;
+}
+@media screen  and (max-width:600px) {
+    .main-container
+    {
+        width: 20rem;
+        align-items: center;
+        justify-content: center;
+       
+        
+    }
+    .card-container
+    {
+        flex-direction: column;
+        justify-content:unset;
+        overflow: hidden;
+
+    }
+    *
+    {
+        margin: 0;
+        gap:0;
+        padding: 0;
+    }
+    .card-container-2
+    {
+        order: -1;
+        object-fit: fill;
+    }
+    .card-container-3
+    {
+        flex-direction: column;
+    }
+    .card-container-1
+    {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .Text .Span-4
+    {
+        display: none;
+    }
+    img
+    {
+
+    object-fit: fill;
+    }
+  
+
+
+    
+}
